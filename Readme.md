@@ -13,7 +13,7 @@ Consider the use case of using a C++ program to test a hardware system. For exam
     auto freq_response_dbspl = test_harness.measure_response(test_frequencies_hz);
 
     // Now test that it is between the limits:
-    for(size_t u = test_frequencies_hz.size())
+    for(size_t u = 0U; u != test_frequencies_hz.size(); ++u)
     {
         EXPECT_LE(freq_response_dbspl.at(u), upper_dbspl.at(u));
         EXPECT_GE(freq_response_dbspl.at(u, lower_dbspl.at(u)));
