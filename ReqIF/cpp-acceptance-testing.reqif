@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REQ-IF xmlns="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd" xmlns:configuration="http://eclipse.org/rmf/pror/toolextensions/1.0" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <THE-HEADER>
+    <REQ-IF-HEADER IDENTIFIER="_FZah0VTmEfCGts-yRdtXVg">
+      <COMMENT>Created by: Bianca</COMMENT>
+      <CREATION-TIME>2025-06-29T14:39:22.985+02:00</CREATION-TIME>
+      <REQ-IF-TOOL-ID>ReqIF Studio (https://reqif.academy)</REQ-IF-TOOL-ID>
+      <REQ-IF-VERSION>1.0</REQ-IF-VERSION>
+      <SOURCE-TOOL-ID>ReqIF Studio (https://reqif.academy)</SOURCE-TOOL-ID>
+      <TITLE>cpp-acceptance-testing</TITLE>
+    </REQ-IF-HEADER>
+  </THE-HEADER>
+  <CORE-CONTENT>
+    <REQ-IF-CONTENT>
+      <DATATYPES>
+        <DATATYPE-DEFINITION-STRING IDENTIFIER="_FZah01TmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="T_String32k" MAX-LENGTH="32000"/>
+        <DATATYPE-DEFINITION-STRING IDENTIFIER="_FZah1FTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="T_String32k_SO_ForeignId" MAX-LENGTH="32000"/>
+        <DATATYPE-DEFINITION-XHTML IDENTIFIER="_FZah1VTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="T_Xhtml_SO_ChapterName"/>
+        <DATATYPE-DEFINITION-XHTML IDENTIFIER="_FZah1lTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="T_Xhtml_SO_Text"/>
+        <DATATYPE-DEFINITION-XHTML IDENTIFIER="_FZah11TmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="T_Xhtml_Spec_Description"/>
+        <DATATYPE-DEFINITION-XHTML IDENTIFIER="_FZah2FTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="T_Xhtml_SR_Description"/>
+        <DATATYPE-DEFINITION-STRING IDENTIFIER="_FZah2VTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="T_String32k_SR_ForeignId" MAX-LENGTH="32000"/>
+        <DATATYPE-DEFINITION-ENUMERATION IDENTIFIER="_sJfjcFTqEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:12:13.321+02:00" LONG-NAME="TestMethod">
+          <SPECIFIED-VALUES>
+            <ENUM-VALUE IDENTIFIER="_vYq1MFTqEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:12:39.561+02:00" LONG-NAME="Manual">
+              <PROPERTIES>
+                <EMBEDDED-VALUE KEY="1" OTHER-CONTENT="1"/>
+              </PROPERTIES>
+            </ENUM-VALUE>
+            <ENUM-VALUE IDENTIFIER="_w_isYFTqEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:12:52.058+02:00" LONG-NAME="Automatic">
+              <PROPERTIES>
+                <EMBEDDED-VALUE KEY="2" OTHER-CONTENT="2"/>
+              </PROPERTIES>
+            </ENUM-VALUE>
+            <ENUM-VALUE IDENTIFIER="_yOqx8FTqEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:13:00.611+02:00" LONG-NAME="Assisted">
+              <PROPERTIES>
+                <EMBEDDED-VALUE KEY="3" OTHER-CONTENT="3"/>
+              </PROPERTIES>
+            </ENUM-VALUE>
+          </SPECIFIED-VALUES>
+        </DATATYPE-DEFINITION-ENUMERATION>
+      </DATATYPES>
+      <SPEC-TYPES>
+        <SPEC-OBJECT-TYPE IDENTIFIER="_FZah2lTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="Requirement Type">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_FZah21TmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="ReqIF.ForeignID">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_FZah1FTmEfCGts-yRdtXVg</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-XHTML IDENTIFIER="_FZah3VTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="ReqIF.Text">
+              <TYPE>
+                <DATATYPE-DEFINITION-XHTML-REF>_FZah1lTmEfCGts-yRdtXVg</DATATYPE-DEFINITION-XHTML-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-XHTML>
+            <ATTRIBUTE-DEFINITION-XHTML IDENTIFIER="_JIHZcFTsEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:22:41.653+02:00" LONG-NAME="ReqIF.ChapterName" IS-EDITABLE="false">
+              <TYPE>
+                <DATATYPE-DEFINITION-XHTML-REF>_FZah1VTmEfCGts-yRdtXVg</DATATYPE-DEFINITION-XHTML-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-XHTML>
+          </SPEC-ATTRIBUTES>
+        </SPEC-OBJECT-TYPE>
+        <SPECIFICATION-TYPE IDENTIFIER="_FZah3lTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="Specification Type">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-XHTML IDENTIFIER="_FZah31TmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="ReqIF.Description">
+              <TYPE>
+                <DATATYPE-DEFINITION-XHTML-REF>_FZah11TmEfCGts-yRdtXVg</DATATYPE-DEFINITION-XHTML-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-XHTML>
+          </SPEC-ATTRIBUTES>
+        </SPECIFICATION-TYPE>
+        <SPEC-RELATION-TYPE IDENTIFIER="_FZah4FTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="SpecRealtion Type">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-XHTML IDENTIFIER="_FZah4VTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="ReqIF.Description">
+              <TYPE>
+                <DATATYPE-DEFINITION-XHTML-REF>_FZah2FTmEfCGts-yRdtXVg</DATATYPE-DEFINITION-XHTML-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-XHTML>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_FZah4lTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00" LONG-NAME="ReqIF.ForeignID">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_FZah2VTmEfCGts-yRdtXVg</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+          </SPEC-ATTRIBUTES>
+        </SPEC-RELATION-TYPE>
+        <SPEC-OBJECT-TYPE IDENTIFIER="_FYxr0FTqEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:07:05.771+02:00" LONG-NAME="TestRequirement">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-XHTML IDENTIFIER="_Jupf4FTqEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:08:26.228+02:00" LONG-NAME="TestObjective" IS-EDITABLE="true">
+              <TYPE>
+                <DATATYPE-DEFINITION-XHTML-REF>_FZah1lTmEfCGts-yRdtXVg</DATATYPE-DEFINITION-XHTML-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-XHTML>
+            <ATTRIBUTE-DEFINITION-ENUMERATION IDENTIFIER="_4B574FTqEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:13:22.625+02:00" LONG-NAME="Method" IS-EDITABLE="true" MULTI-VALUED="false">
+              <TYPE>
+                <DATATYPE-DEFINITION-ENUMERATION-REF>_sJfjcFTqEfCGts-yRdtXVg</DATATYPE-DEFINITION-ENUMERATION-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-ENUMERATION>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_L-Jn4FTrEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:15:51.948+02:00" LONG-NAME="TestID" IS-EDITABLE="true">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_FZah01TmEfCGts-yRdtXVg</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_Rej8cFTrEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:16:28.190+02:00" LONG-NAME="ExpectedResult" IS-EDITABLE="true">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_FZah01TmEfCGts-yRdtXVg</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+              <DEFAULT-VALUE>
+                <ATTRIBUTE-VALUE-STRING THE-VALUE="Enter the expected result / pass criteria here.">
+                  <DEFINITION>
+                    <ATTRIBUTE-DEFINITION-STRING-REF>_Rej8cFTrEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+                  </DEFINITION>
+                </ATTRIBUTE-VALUE-STRING>
+              </DEFAULT-VALUE>
+            </ATTRIBUTE-DEFINITION-STRING>
+          </SPEC-ATTRIBUTES>
+        </SPEC-OBJECT-TYPE>
+        <SPEC-OBJECT-TYPE IDENTIFIER="_lSVB4FTrEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:18:35.339+02:00" LONG-NAME="Software Requirement">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_rQfCYFTrEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:19:20.364+02:00" LONG-NAME="ReqIF.ForeignID" IS-EDITABLE="true">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_FZah01TmEfCGts-yRdtXVg</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-XHTML IDENTIFIER="_FZah3FTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:21:40.122+02:00" LONG-NAME="ReqIF.ChapterName">
+              <TYPE>
+                <DATATYPE-DEFINITION-XHTML-REF>_FZah1VTmEfCGts-yRdtXVg</DATATYPE-DEFINITION-XHTML-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-XHTML>
+            <ATTRIBUTE-DEFINITION-XHTML IDENTIFIER="_OtK9cFTsEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T15:23:18.578+02:00" LONG-NAME="ReqIF.Text" IS-EDITABLE="true">
+              <TYPE>
+                <DATATYPE-DEFINITION-XHTML-REF>_FZah1lTmEfCGts-yRdtXVg</DATATYPE-DEFINITION-XHTML-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-XHTML>
+          </SPEC-ATTRIBUTES>
+        </SPEC-OBJECT-TYPE>
+      </SPEC-TYPES>
+      <SPEC-OBJECTS>
+        <SPEC-OBJECT IDENTIFIER="_FZah41TmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T21:07:31.584+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_JIHZcFTsEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:h1>User Requirements</xhtml:h1></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_phN2cFTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T21:15:24.176+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah3VTmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p><xhtml:span style="font-family: &quot;Segoe UI&quot;;">The software shall be capable to generate reporting for all test assertions regardless of the pass / fail outcome of the assertion.</xhtml:span></xhtml:p><xhtml:p style="font-style: italic">Note: Reporting all assertions:</xhtml:p><xhtml:ul>
+                    <xhtml:li><xhtml:i>Gives a more complete picture of what was tested by inspection of the report only (without needing to retreive versioned test code)</xhtml:i></xhtml:li>
+                    <xhtml:li><xhtml:i>Retains information like measured values which would otherwise be lost if only the assertion pass result was recorded.</xhtml:i></xhtml:li>
+                  </xhtml:ul><xhtml:br/></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-Rpt-All-Asserts">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_3KERwFTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T21:15:32.054+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah3VTmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">It shall be possible to dynamically configure the test assertion reporting.</xhtml:p><xhtml:p style="font-style: italic">Note: This is useful for test cases where assertions are repeated or too numerous to warrent reporting.</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-Rpt-Config-Asserts">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_1wfLgFTtEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T21:07:16.821+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_JIHZcFTsEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:h2>Test Case Definition</xhtml:h2></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-TestCase">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_Mm0qEFTuEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T15:37:24.331+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="SR-1">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_rQfCYFTrEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_OtK9cFTsEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">asdf</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_lSVB4FTrEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_AmKOYFULEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T19:07:11.729+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="T-2">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_L-Jn4FTrEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-ENUMERATION>
+              <VALUES>
+                <ENUM-VALUE-REF>_yOqx8FTqEfCGts-yRdtXVg</ENUM-VALUE-REF>
+              </VALUES>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-ENUMERATION-REF>_4B574FTqEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-ENUMERATION-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-ENUMERATION>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_Jupf4FTqEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">Test that the output report contains all test assertions</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Output report contains both passed and failed test assertions.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_Rej8cFTrEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FYxr0FTqEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_R1Q-sFULEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T19:05:32.855+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="T-1">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_L-Jn4FTrEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-ENUMERATION>
+              <VALUES>
+                <ENUM-VALUE-REF>_yOqx8FTqEfCGts-yRdtXVg</ENUM-VALUE-REF>
+              </VALUES>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-ENUMERATION-REF>_4B574FTqEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-ENUMERATION-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-ENUMERATION>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_Jupf4FTqEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">Test than an output report is generated of the correct format</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Output report generated and can be opened in the associated application (LibreOffice for ODT, ...)">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_Rej8cFTrEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FYxr0FTqEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_1vPV4FUPEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T21:15:45.370+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah3VTmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">Test cases shall be defined as standalone blocks of C++ code.</xhtml:p><xhtml:p style="font-style: italic">Example: TEST(...) { Test steps and assertions go here... }</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-TestCaseDefn">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_3ddLMFUPEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T21:15:40.745+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah3VTmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">Test cases shall be statically / automatically registered.</xhtml:p><xhtml:p style="font-style: italic">Explanation: there should be minimal overhead in defining a test case besides writing the block of test code.</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-TestCaseStaticReg">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_xJ7iMFUQEfCYhb4hsATDJg" LAST-CHANGE="2025-06-29T21:08:06.631+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_JIHZcFTsEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:h2>Test Reporting</xhtml:h2></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-Rpt">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_xF7ncFUaEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T20:58:49.383+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-Rpt-Gen-HTML">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah3VTmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">The software shall be capable to generate an HTML test report.</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_IzC9AFUbEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T20:59:04.522+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-Rpt-Traceability">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah3VTmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">The report shall show traceability from the requirements to the test requirements to the test cases. Traceability is to be defined and obtained from a ReqIF .reqif file which the software shall parse in order to determine the relations.</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_icDiEFUcEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T21:09:26.718+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_JIHZcFTsEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:h2>Test Execution</xhtml:h2></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-TestRun">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_pgvFwFUcEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T21:09:53.916+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah3VTmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">The software shall support automatic test execution. Tests to be run shall be defined as a test suite.</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-TestRunAuto">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_0WLlUFUcEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T21:11:08.637+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="UR-TestRunAssisted">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_FZah21TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah3VTmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">The software shall support assisted test execution where some tests steps run automatically but operator assistance is necessary to perform some test procedures or verification steps. The shall provide capability to provide operator prompts to perform test steps and accept input verification results.</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_FZah2lTmEfCGts-yRdtXVg</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+      </SPEC-OBJECTS>
+      <SPECIFICATIONS>
+        <SPECIFICATION IDENTIFIER="_FZah61TmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T19:28:39.169+02:00" LONG-NAME="Requirements Document">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah31TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div>C++ Acceptance Testing: User Requirements</xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+          </VALUES>
+          <TYPE>
+            <SPECIFICATION-TYPE-REF>_FZah3lTmEfCGts-yRdtXVg</SPECIFICATION-TYPE-REF>
+          </TYPE>
+          <CHILDREN>
+            <SPEC-HIERARCHY IDENTIFIER="_FZah71TmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T14:39:22.985+02:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_FZah41TmEfCGts-yRdtXVg</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN>
+                <SPEC-HIERARCHY IDENTIFIER="_1xGPgFTtEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T15:34:43.477+02:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_1wfLgFTtEfCKrZT0Eo9nxQ</SPEC-OBJECT-REF>
+                  </OBJECT>
+                  <CHILDREN>
+                    <SPEC-HIERARCHY IDENTIFIER="_1v0ksFUPEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T19:38:10.108+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_1vPV4FUPEfCKrZT0Eo9nxQ</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                    <SPEC-HIERARCHY IDENTIFIER="_3eDoIFUPEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T19:38:24.157+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_3ddLMFUPEfCKrZT0Eo9nxQ</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                  </CHILDREN>
+                </SPEC-HIERARCHY>
+                <SPEC-HIERARCHY IDENTIFIER="_icrNIFUcEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T21:09:06.676+02:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_icDiEFUcEfCtVvym_lNIFg</SPEC-OBJECT-REF>
+                  </OBJECT>
+                  <CHILDREN>
+                    <SPEC-HIERARCHY IDENTIFIER="_phU7oFUcEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T21:09:53.916+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_pgvFwFUcEfCtVvym_lNIFg</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                    <SPEC-HIERARCHY IDENTIFIER="_0WyCQFUcEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T21:11:08.637+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_0WLlUFUcEfCtVvym_lNIFg</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                  </CHILDREN>
+                </SPEC-HIERARCHY>
+                <SPEC-HIERARCHY IDENTIFIER="_xKh_IFUQEfCYhb4hsATDJg" LAST-CHANGE="2025-06-29T19:44:48.552+02:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_xJ7iMFUQEfCYhb4hsATDJg</SPEC-OBJECT-REF>
+                  </OBJECT>
+                  <CHILDREN>
+                    <SPEC-HIERARCHY IDENTIFIER="_xGjSgFUaEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T20:58:54.554+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_xF7ncFUaEfCtVvym_lNIFg</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                    <SPEC-HIERARCHY IDENTIFIER="_IzpZ8FUbEfCtVvym_lNIFg" LAST-CHANGE="2025-06-29T21:01:16.171+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_IzC9AFUbEfCtVvym_lNIFg</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                    <SPEC-HIERARCHY IDENTIFIER="_ph0TYFTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T20:58:59.770+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_phN2cFTmEfCGts-yRdtXVg</SPEC-OBJECT-REF>
+                      </OBJECT>
+                      <CHILDREN/>
+                    </SPEC-HIERARCHY>
+                    <SPEC-HIERARCHY IDENTIFIER="_3KqusFTmEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T19:45:24.245+02:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_3KERwFTmEfCGts-yRdtXVg</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                  </CHILDREN>
+                </SPEC-HIERARCHY>
+              </CHILDREN>
+            </SPEC-HIERARCHY>
+          </CHILDREN>
+        </SPECIFICATION>
+        <SPECIFICATION IDENTIFIER="_l9zyYFTsEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T19:28:24.763+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah31TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">C++ Acceptance Testing: Software Requirements</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+          </VALUES>
+          <TYPE>
+            <SPECIFICATION-TYPE-REF>_FZah3lTmEfCGts-yRdtXVg</SPECIFICATION-TYPE-REF>
+          </TYPE>
+          <CHILDREN>
+            <SPEC-HIERARCHY IDENTIFIER="_MnbHAFTuEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T15:37:24.331+02:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_Mm0qEFTuEfCKrZT0Eo9nxQ</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+          </CHILDREN>
+        </SPECIFICATION>
+        <SPECIFICATION IDENTIFIER="_oK9mcFTsEfCGts-yRdtXVg" LAST-CHANGE="2025-06-29T19:28:32.187+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-XHTML>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-XHTML-REF>_FZah31TmEfCGts-yRdtXVg</ATTRIBUTE-DEFINITION-XHTML-REF>
+              </DEFINITION>
+              <THE-VALUE>
+                <xhtml:div><xhtml:p style="">C++ Acceptance Testing: Test Requirements</xhtml:p></xhtml:div>
+              </THE-VALUE>
+            </ATTRIBUTE-VALUE-XHTML>
+          </VALUES>
+          <TYPE>
+            <SPECIFICATION-TYPE-REF>_FZah3lTmEfCGts-yRdtXVg</SPECIFICATION-TYPE-REF>
+          </TYPE>
+          <CHILDREN>
+            <SPEC-HIERARCHY IDENTIFIER="_R18UIFULEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T19:06:58.313+02:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_R1Q-sFULEfCKrZT0Eo9nxQ</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_AmxSYFULEfCKrZT0Eo9nxQ" LAST-CHANGE="2025-06-29T19:03:34.140+02:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_AmKOYFULEfCKrZT0Eo9nxQ</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN/>
+            </SPEC-HIERARCHY>
+          </CHILDREN>
+        </SPECIFICATION>
+      </SPECIFICATIONS>
+    </REQ-IF-CONTENT>
+  </CORE-CONTENT>
+  <TOOL-EXTENSIONS>
+    <REQ-IF-TOOL-EXTENSION>
+      <configuration:ProrToolExtension>
+        <configuration:generalConfiguration>
+          <configuration:ProrGeneralConfiguration>
+            <configuration:labelConfiguration>
+              <configuration:LabelConfiguration>
+                <defaultLabel>TestID</defaultLabel>
+                <defaultLabel>ReqIF.Description</defaultLabel>
+                <defaultLabel>ReqIF.ForeignID</defaultLabel>
+              </configuration:LabelConfiguration>
+            </configuration:labelConfiguration>
+          </configuration:ProrGeneralConfiguration>
+        </configuration:generalConfiguration>
+        <configuration:presentationConfigurations>
+          <configuration:ProrPresentationConfigurations>
+            <configuration:presentationConfigurations/>
+          </configuration:ProrPresentationConfigurations>
+        </configuration:presentationConfigurations>
+      </configuration:ProrToolExtension>
+    </REQ-IF-TOOL-EXTENSION>
+  </TOOL-EXTENSIONS>
+</REQ-IF>
