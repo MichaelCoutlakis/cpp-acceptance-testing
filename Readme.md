@@ -1,4 +1,4 @@
-# C++ Acceptance Testing
+# <img src="C++AcceptanceTesting.svg" style="vertical-align: middle"> C++ Acceptance Testing
 
 ## Motivation
 
