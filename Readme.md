@@ -16,7 +16,7 @@ Consider the use case of using a C++ program to test a hardware system. For exam
     for(size_t u = 0U; u != test_frequencies_hz.size(); ++u)
     {
         EXPECT_LE(freq_response_dbspl.at(u), upper_dbspl.at(u));
-        EXPECT_GE(freq_response_dbspl.at(u, lower_dbspl.at(u)));
+        EXPECT_GE(freq_response_dbspl.at(u), lower_dbspl.at(u));
     }
 
 ```
