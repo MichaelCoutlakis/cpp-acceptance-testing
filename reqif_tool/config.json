@@ -1,0 +1,5 @@
+{
+    "reqif_input_file": "../ReqIF/cpp-acceptance-testing.reqif",
+    "cpp_output_file": "../tests/reqif-spec.cpp",
+    "doc_output_file": "../tests/reqif-doc.html"
+}
